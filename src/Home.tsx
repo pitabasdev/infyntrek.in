@@ -1,25 +1,27 @@
 
 import HeroSectionOne from './utils/Hero';
-
-import About from './utils/About';
+import { EnhancedAbout } from '@/components/ui/enhanced-about';
 import Services from './utils/Services';
 import { MdOutlineSupportAgent } from "react-icons/md";
 import ITServicesFeaturesSection from './components/it-services-features';
 import { TestimonialsSection } from '@/components/ui/animated-testimonials';
+import { PortfolioShowcase } from '@/components/ui/portfolio-showcase';
+import { PricingSection } from '@/components/ui/pricing-section';
 import FaqPage from './utils/Faq';
 import { Link } from 'react-router';
+
 const Home = () => {
   return (
     <>
       <HeroSectionOne />
-      {/* <Clients /> */}
       <div id='about'>
-        <About />
+        <EnhancedAbout />
       </div>
-
       <Services />
+      <PortfolioShowcase />
       <ITServicesFeaturesSection />
       <TestimonialsSection />
+      <PricingSection />
       <FaqPage />
       <Link to={"https://wa.link/def9br"} target='_blank' className=''>
         <div className='fixed bottom-4 right-4 z-60' >
