@@ -5,7 +5,7 @@ import About from './utils/About';
 import Services from './utils/Services';
 import { MdOutlineSupportAgent } from "react-icons/md";
 import ITServicesFeaturesSection from './components/it-services-features';
-import { Testimonials } from './components/eldoraui/testimonals';
+import { TestimonialsSection } from '@/components/ui/animated-testimonials';
 import FaqPage from './utils/Faq';
 import { Link } from 'react-router';
 const Home = () => {
@@ -19,9 +19,7 @@ const Home = () => {
 
       <Services />
       <ITServicesFeaturesSection />
-      <div className="flex justify-center items-center max-w-7xl mx-auto px-4 py-8">
-        <Testimonials />
-      </div>
+      <TestimonialsSection />
       <FaqPage />
       <Link to={"https://wa.link/def9br"} target='_blank' className=''>
         <div className='fixed bottom-4 right-4 z-60' >
